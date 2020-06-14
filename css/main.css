@@ -1,0 +1,215 @@
+* {
+    font-family: 'Arvo', serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+a, p, h1, h2, h3, span{
+    color: #fcfefc;
+}
+
+body{
+    background: rgb(30,51,54);
+    background: -moz-linear-gradient(0deg, rgba(30,51,54,1) 0%, rgba(28,27,28,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(30,51,54,1) 0%, rgba(28,27,28,1) 100%);
+    background: linear-gradient(0deg, rgba(30,51,54,1) 0%, rgba(28,27,28,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e3336",endColorstr="#1c1b1c",GradientType=1);
+}
+
+/* Header screen */
+
+.header {
+    padding-top: 31px;
+}
+
+ul li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.logo {
+    width: 135px;
+    height: 55px;
+    fill: white;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.menu__item {
+    margin: 0 30px;
+    
+}
+
+.menu__item a {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fcfefc;
+    text-decoration: none;
+}
+
+/* Art screen */
+
+.title{
+    padding-top: 78px;
+    text-align: center;
+    padding-bottom: 78px;
+}
+
+.art-section-item-wrap{
+    min-width: 19%;
+    padding: 0;
+    background: blue;
+    width: 100%;
+    height: 327px;
+}
+
+.item img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 327px; 
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.art-section{
+    padding-bottom: 76px;
+}
+.store-section{
+    padding-bottom: 76px;
+}
+.about-section{
+    padding-bottom: 76px;
+}
+.contacts-section{
+
+    padding-bottom: 76px;
+}
+
+#toTop {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border:1px solid #ccc;
+    background:#f7f7f7;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:30px; /* отступ кнопки от нижнего края страницы*/
+    right:30px;
+    cursor:pointer;
+    display:flex;
+    color:#333;
+    font-family:verdana;
+    font-size:11px;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.09);
+    -moz-box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.09);
+    box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.09);   
+    z-index: 5;
+   }
+
+#toTop img{
+    width: 16px;
+    height: 16px;
+
+}
+
+#toTop:hover::after {
+    width: 100px;
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    margin-top: 80px; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(29, 29, 29, 0.6); /* Полупрозрачный цвет фона */
+    color: #fff; /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 11px; /* Размер текста подсказки */
+    border: 1px solid #333; /* Параметры рамки */
+    border-radius: 3px 3px 3px 3px ;
+    
+   }
+ 
+   .nav-anim::after{
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fcfefc;
+    transition: width 0.3s;
+    
+   }
+
+   .nav-anim:hover::after{
+       width: 100%;
+       transition: width 0.3s;
+   }
+
+   .store-item{
+       width: 100%;
+       height: 200px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+
+   .buy-it{
+       margin-top: 130px;
+       position: absolute;
+       color: black;
+       background-color: white;
+       padding: 5px 20px;
+       transition: 0.25s;
+   }
+   
+   .buy-it:hover{
+        background-color: black;
+        color: white;
+   }
+
+.box{
+    margin: 0 0 150px 0;
+    color: white;
+    border: 10px solid white;
+}
+
+.box h1{
+    font-size: 4em; 
+    padding: 30px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.box-title{
+    margin-top: 150px;
+    text-align: center;
+    letter-spacing: 11px;
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+.footer{
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px;
+    opacity: 50%;
+}
+
+.about-text{
+    text-align: center;
+}
+
+@media screen and (max-width: 480px){
+    .box h1{
+        font-size: 2.5em; 
+    }
+}
